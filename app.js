@@ -361,9 +361,9 @@ const displayErrorReport = () => {
 			const fx = isWarn ? 'warn' : 'error';
 			const c = isWarn ? chalk.yellow: chalk.red;
 			console[fx](c(e.message || e));
-			if (!isWarn) {
-				returnCode = ERROR_EXIT_CODE;
-			}
+			// if (!isWarn) {
+			// 	returnCode = ERROR_EXIT_CODE;
+			// }
 		});
 	}
 };
